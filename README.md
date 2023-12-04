@@ -216,3 +216,15 @@ rain [<FORMAT>] <MODE> <ARCHIVE-FILE> [<FILE...>]
 - To create an archive in 7-bit format with files `file1.txt` and `file2.txt`: `rain -7 -c archive.drop file1.txt file2.txt`
 - To append `file3.txt` to an existing archive in 6-bit format: `rain -6 -a archive.drop file3.txt`
 - To extract all files from an archive: `rain -x archive.drop`
+
+## Limitations in Usage of Rain File Archiver
+
+Certain features in `rain` may exhibit unexpected behavior or limitations:
+
+### 7-bit and 6-bit Format Support
+- The commands involving 7-bit (`-7`) and 6-bit (`-6`) formats, particularly for creating (`-c`) and appending (`-a`) to archive files, have shown inconsistencies and unexpected results in some tests. This includes potential issues with incorrect output or lack of error reporting.
+
+### Complex Multi-format Operations
+- When performing complex sequences of operations, especially those involving multiple formats (6-bit, 7-bit, and default 8-bit), `rain` may not behave as expected. This includes scenarios where files are appended in different formats in a sequential manner.
+
+**Note to Users:** Exercise caution and conduct thorough testing when using these specific features of `rain`. The observed issues point towards potential improvements needed in handling different bit formats and complex archiving operations.

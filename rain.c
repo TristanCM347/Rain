@@ -1,11 +1,3 @@
-////////////////////////////////////////////////////////////////////////
-// COMP1521 23T1 --- Assignment 2: `rain', a simple file archiver
-// <https://www.cse.unsw.edu.au/~cs1521/23T1/assignments/ass2/index.html>
-//
-// Written by TRISTAN CLINTON-MUEHR (z5420825) on 16/04/2023.
-//
-// 2021-11-08   v1.1    Team COMP1521 <cs1521 at cse.unsw.edu.au>
-
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
